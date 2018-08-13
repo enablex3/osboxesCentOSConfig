@@ -14,7 +14,7 @@ else
     exit 1
 fi
 
-# If the release is compliant then create and configure ifcfg-et0
+# If the release is compliant then create and configure ifcfg-eth0
 ethcfg=/etc/sysconfig/network-scripts/ifcfg-eth0
 if [ ! -f  $ethcfg ]; then
     echo "DEVICE=eth0" > $ethcfg
