@@ -5,7 +5,7 @@ centosR=$(rpm --query centos-release)
 desR="centos-release-6-9.el6.12.3.i686"
 echo "Checking CentOS release..."
 
-if [ ! $centosR == $desR ]; then
+if [ $centosR == $desR ]; then
     echo "[OK]"
     continue 
 else
