@@ -21,7 +21,7 @@ Instructions:
 4. Once the script has run then your system will reboot
 5. Upon reboot do:
     a. "su"
-    b. "ifconfing"
+    b. "ifconfig"
 6. Make sure that "eth0" has become a networking device
    a. Test networking by pinging the host machine.
    b. Test Internet by opening Firefox or "wget [some_url]" ==> You should see a "200 Ok" 
