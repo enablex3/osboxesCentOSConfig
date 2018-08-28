@@ -18,10 +18,10 @@ fi
 ethcfg=/etc/sysconfig/network-scripts/ifcfg-eth0
 if [ ! -f  $ethcfg ]; then
     echo "DEVICE=eth0" > $ethcfg
-    echo "TYPE=Ethernet" > $ethcfg
-    echo "ONBOOT=yes" > $ethcfg
-    echo "BOOTPROTO=dhcp" > $ethcfg
-    echo "IPV4_FAILURE_FATAL=yes" > $ethcfg
+    echo "TYPE=Ethernet" >> $ethcfg
+    echo "ONBOOT=yes" >> $ethcfg
+    echo "BOOTPROTO=dhcp" >> $ethcfg
+    echo "IPV4_FAILURE_FATAL=yes" >> $ethcfg
 else:
     echo "$ethcfg already exists"
     exit 1
